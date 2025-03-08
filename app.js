@@ -6,7 +6,7 @@ const AvatarGenerator = require('random-avatar-generator').AvatarGenerator;
 const generator = new AvatarGenerator();
 app.get('/', (req, res) => {
   res.send({
-    message: 'Request served by backend!',
+    message: 'Request by backend!',
     app: 'ecs backend app',
     avatar: generator.generateRandomAvatar(),
   });
